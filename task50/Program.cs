@@ -38,13 +38,13 @@ void MethodReturn(int[,] matrix)
         Console.WriteLine();
     }
 
-    if (m > matrix.GetLength(0)  || n > matrix.GetLength(1)  || m < 0 && n < 0)
+    if (m > matrix.GetLength(0)-1  || n > matrix.GetLength(1)-1  || m < 0 && n < 0)
     {
         Console.WriteLine("такого элемента нет");
     }
     else
     {
-        Console.WriteLine($"значение элемента {m} строки и {n} столбца = {matrix[m++,n++]}");
+        Console.WriteLine($"значение элемента {m} строки и {n} столбца = {matrix[m,n]}");
     }
 }
 
